@@ -1,5 +1,5 @@
 configuration:  
-  projectName: requestertype-service
+  projectName: availability-service
 #Region Service Port
 server:
  port: 8089
