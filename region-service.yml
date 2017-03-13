@@ -2,12 +2,12 @@ configuration:
   projectName: region-service
 #Region Service Port
 server:
- port:8562
+ port: 8562
 
 #Database properties
 spring:
  data:
   mongodb:
-   database:ForestDB
-   host:localhost
-   port:27017
+   database: ForestDB
+   host: localhost
+   port: 27017
