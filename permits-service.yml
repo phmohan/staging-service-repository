@@ -1,0 +1,13 @@
+configuration:  
+  projectName: permits-service
+#Region Service Port
+server:
+ port: 8095
+
+#Database properties
+spring:
+ data:
+  mongodb:
+   database: ForestDB
+   host: localhost
+   port: 27017
