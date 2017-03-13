@@ -1,0 +1,13 @@
+configuration:  
+  projectName: reservation-service
+#Region Service Port
+server:
+ port: 8085
+
+#Database properties
+spring:
+ data:
+  mongodb:
+   database: ForestDB
+   host: localhost
+   port: 27017
