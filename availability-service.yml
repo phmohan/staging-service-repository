@@ -1,0 +1,13 @@
+configuration:  
+  projectName: requestertype-service
+#Region Service Port
+server:
+ port: 8089
+
+#Database properties
+spring:
+ data:
+  mongodb:
+   database: ForestDB
+   host: localhost
+   port: 27017
