@@ -11,3 +11,8 @@ spring:
    database: ForestDB
    host: localhost
    port: 27017
+   
+logging:
+ file: Receipts.log
+ level: INFO
+ 
