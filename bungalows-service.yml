@@ -2,7 +2,7 @@ configuration:
   projectName: bungalows-service
 #Region Service Port
 server:
- port: 8083
+ port: 8084
 
 #Database properties
 spring:
