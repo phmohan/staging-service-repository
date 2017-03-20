@@ -2,7 +2,7 @@ configuration:
   projectName: payment-service
 #Payment Service Port
 server:
- port: 8099
+ port: 8098
 
 #Database properties
 spring:
