@@ -1,6 +1,6 @@
 configuration:  
   projectName: reservation-service
-#Region Service Port
+#Reservation Service Port
 server:
  port: 8085
 
@@ -11,3 +11,7 @@ spring:
    database: ForestDB
    host: localhost
    port: 27017
+
+logging:
+ file: Reservation.log
+ level: INFO
