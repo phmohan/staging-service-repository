@@ -1,6 +1,6 @@
 configuration:  
   projectName: permits-service
-#Region Service Port
+#Permits Service Port
 server:
  port: 8095
 
@@ -11,3 +11,7 @@ spring:
    database: ForestDB
    host: localhost
    port: 27017
+
+logging:
+ file: Permits.log
+ level: INFO
