@@ -1,6 +1,6 @@
 configuration:  
   projectName: rate-service
-#Region Service Port
+#Rate Service Port
 server:
  port: 8093
 
@@ -11,3 +11,7 @@ spring:
    database: ForestDB
    host: localhost
    port: 27017
+   
+logging:
+ file: Rate.log
+ level: INFO
