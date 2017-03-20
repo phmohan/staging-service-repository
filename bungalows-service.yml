@@ -1,6 +1,6 @@
 configuration:  
   projectName: bungalows-service
-#Region Service Port
+#Bungalows Service Port
 server:
  port: 8083
 
@@ -11,3 +11,7 @@ spring:
    database: ForestDB
    host: localhost
    port: 27017
+   
+logging:
+ file: Bungalows.log
+ level: INFO
