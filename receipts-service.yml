@@ -1,6 +1,6 @@
 configuration:  
   projectName: receipts-service
-#Region Service Port
+#Receipts Service Port
 server:
  port: 8092
 
