@@ -1,0 +1,17 @@
+configuration:  
+  projectName: payment-service
+#Payment Service Port
+server:
+ port: 8099
+
+#Database properties
+spring:
+ data:
+  mongodb:
+   database: ForestDB
+   host: localhost
+   port: 27017
+   
+logging:
+ file: Payment.log
+ level: INFO
