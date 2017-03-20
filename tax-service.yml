@@ -1,6 +1,6 @@
 configuration:  
   projectName: tax-service
-#Region Service Port
+#Tax Service Port
 server:
  port: 8087
 
@@ -11,3 +11,7 @@ spring:
    database: ForestDB
    host: localhost
    port: 27017
+   
+logging:
+ file: Tax.log
+ level: INFO
