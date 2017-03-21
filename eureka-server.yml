@@ -1,6 +1,6 @@
 configuration:  
   projectName: eureka-server
-#Availability Service Port
+  
 server:
  port: 8761
 
