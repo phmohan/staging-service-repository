@@ -17,6 +17,7 @@ logging:
  level: INFO
 
 # MongoDB Properties 
+mongodb:
   database: ForestDB
   host: localhost
   port: 27017
