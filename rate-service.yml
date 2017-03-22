@@ -5,13 +5,34 @@ server:
  port: 8093
 
 #Database properties
-spring:
- data:
-  mongodb:
-   database: ForestDB
-   host: localhost
-   port: 27017
+#spring:
+ #data:
+ # mongodb:
+  # database: ForestDB
+  # host: localhost
+  # port: 27017
    
 logging:
  file: Rate.log
  level: INFO
+
+# MongoDB Properties 
+  database: ForestDB
+  host: localhost
+  port: 27017
+  maxConnectionsPerHost: 10000
+  threadsAllowedToBlockForConnectionMultiplier: 5
+  serverSelectionTimeout: 30000
+  maxWaitTime: 120000
+  connectTimeout: 10000
+  socketTimeout: 0
+  socketKeepAlive: false
+  sslEnabled: false
+  sslInvalidHostNameAllowed: false
+  alwaysUseMBeans: false 
+  heartbeatFrequency: 10000
+  minHeartbeatFrequency: 500
+  heartbeatConnectTimeout: 20000
+  heartbeatSocketTimeout: 20000
+  localThreshold: 15
+  cursorFinalizerEnabled: true
