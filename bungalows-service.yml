@@ -2,7 +2,7 @@ configuration:
   projectName: bungalows-service
 #Bungalows Service Port
 server:
- port: 9090
+ port: 8083
 
 #Database properties
 spring:
