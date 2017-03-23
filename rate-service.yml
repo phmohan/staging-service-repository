@@ -25,7 +25,7 @@ spring:
    port: 27017
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
-   serverSelectionTimeout: 60000
+   serverSelectionTimeout: 30000
    maxWaitTime: 120000
    connectTimeout: 10000
    socketTimeout: 0
