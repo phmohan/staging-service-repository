@@ -4,14 +4,30 @@ configuration:
 server:
  port: 8095
 
-#Database properties
+logging:
+ file: Permits.log
+ level: INFO
+
+# MongoDB Properties 
 spring:
  data:
   mongodb:
    database: ForestDB
    host: localhost
    port: 27017
-
-logging:
- file: Permits.log
- level: INFO
+   maxConnectionsPerHost: 10000
+   threadsAllowedToBlockForConnectionMultiplier: 5
+   serverSelectionTimeout: 30000
+   maxWaitTime: 120000
+   connectTimeout: 10000
+   socketTimeout: 0
+   socketKeepAlive: false
+   sslEnabled: false
+   sslInvalidHostNameAllowed: false
+   alwaysUseMBeans: false 
+   heartbeatFrequency: 10000
+   minHeartbeatFrequency: 500
+   heartbeatConnectTimeout: 20000
+   heartbeatSocketTimeout: 20000
+   localThreshold: 15
+   cursorFinalizerEnabled: true
