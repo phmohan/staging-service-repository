@@ -1,0 +1,69 @@
+info:
+  component: Edge Server
+  
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  routes:
+    bungalows-service:
+          path: /forestbungalow/**
+          serviceId: bungalows-service
+    region-service:
+          path: /forestregion/**
+          serviceId: region-service
+    requestertype-service:
+          path: /forestrequestertype/**
+          serviceId: requestertype-service
+    tax-service:
+          path: /foresttax/**
+          serviceId: tax-service
+    reservation-service:
+          path: /forestreservation/**
+          serviceId: reservation-service
+    receipts-service:
+          path: /forestreceipts/**
+          serviceId: receipts-service
+    rate-service:
+          path: /forestrate/**
+          serviceId: rate-service
+    permits-service:
+          path: /forestpermits/**
+          serviceId: permits-service
+    availability-service:
+          path: /forestavailability/**
+          serviceId: availability-service
+    payment-service:
+          path: /forestpayment/**
+          serviceId: payment-service
+    notification-service:
+          path: /forestnotification/**
+          serviceId: notification-service
+spring:
+  application:
+    name: edge-server
+              
+ribbon:
+  eureka:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 120000
+
+server:
+  port: 8765
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
