@@ -2,7 +2,7 @@ configuration:
   projectName: region-service
 #Region Service Port
 server:
- port: 8563
+ port: 8562
    
 logging:
  file: Region.log
