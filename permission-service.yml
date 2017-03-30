@@ -2,7 +2,7 @@ configuration:
   projectName: permission-service
 #Permission Service Port
 server:
- port: 8089
+ port: 8055
    
 logging:
  file: Permission.log
