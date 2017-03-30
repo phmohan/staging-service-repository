@@ -2,7 +2,7 @@ configuration:
   projectName: role-service
 #Role Service Port
 server:
- port: 8098
+ port: 8075
    
 logging:
  file: Role.log
