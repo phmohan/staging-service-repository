@@ -44,6 +44,15 @@ zuul:
     notification-service:
           path: /forestnotification/**
           serviceId: notification-service
+    user-service:
+          path: /forestuser/**
+          serviceId: user-service
+    role-service:
+          path: /forestrole/**
+          serviceId: role-service
+    permission-service:
+          path: /forestpermission/**
+          serviceId: permission-service          
 spring:
   application:
     name: edge-server
