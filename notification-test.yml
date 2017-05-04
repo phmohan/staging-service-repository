@@ -2,7 +2,7 @@ configuration:
   projectName: notification-service
 #Notification Service Port
 server:
- port: 8099
+ port: 8096
    
 logging:
  file: Notification.log
