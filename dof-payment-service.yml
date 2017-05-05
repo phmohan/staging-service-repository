@@ -1,0 +1,61 @@
+configuration:  
+  projectName: payment-service
+#Payment Service Port
+server:
+ port: 8098
+
+#Database properties
+#spring:
+ #data:
+  #mongodb:
+   #database: ForestDB
+   #host: localhost
+   #port: 27017
+   
+#logging:
+ #file: Payment.log
+ #level: INFO
+log4j:
+  logger:
+    org:
+      springframework:
+        ALL
+ 
+
+# MongoDB Properties 
+spring:
+ data:
+  mongodb:
+   database: ForestDB
+   host: localhost
+   port: 27017
+   maxConnectionsPerHost: 10000
+   threadsAllowedToBlockForConnectionMultiplier: 5
+   serverSelectionTimeout: 30000
+   maxWaitTime: 120000
+   connectTimeout: 10000
+   socketTimeout: 0
+   socketKeepAlive: false
+   sslEnabled: false
+   sslInvalidHostNameAllowed: false
+   alwaysUseMBeans: false 
+   heartbeatFrequency: 10000
+   minHeartbeatFrequency: 500
+   heartbeatConnectTimeout: 20000
+   heartbeatSocketTimeout: 20000
+   localThreshold: 15
+   cursorFinalizerEnabled: true
+   
+eureka:
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+
