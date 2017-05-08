@@ -55,7 +55,7 @@ zuul:
           serviceId: dof-role-service
     dof-permission-service:
           path: /forestpermission/**
-          serviceId: permission-service
+          serviceId: dof-permission-service
     masl-bungalows-service:
           path: /maslbungalow/**
           serviceId: masl-bungalows-service
