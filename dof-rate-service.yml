@@ -20,7 +20,7 @@ logging:
 spring:
  data:
   mongodb:
-   user: dofUser
+   user: dofuser
    database: ForestDB
    password: g+H1ppDyrXldSwoLBo6c6Q==
    host: localhost
