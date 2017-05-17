@@ -26,7 +26,9 @@ log4j:
 spring:
  data:
   mongodb:
+   user: dofUser
    database: ForestDB
+   password: g+H1ppDyrXldSwoLBo6c6Q==
    host: localhost
    port: 27017
    maxConnectionsPerHost: 10000
