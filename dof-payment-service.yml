@@ -60,4 +60,6 @@ eureka:
       enabled: false
     lease:
       duration: 5
-
+      
+envirnment: test
+#envirnment: production
